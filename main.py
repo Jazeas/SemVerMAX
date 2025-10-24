@@ -4,9 +4,9 @@ def hello_world():
 
 def personalized_greeting(name):
     """Создает персональное приветствие"""
-    if not name:
+    if not name or name.strip() == "":
         return "Hello, there!"
-    return f"Hello, {name}!"
+    return f"Hello, {name.strip()}!"
 
 def main():
     print(hello_world())
